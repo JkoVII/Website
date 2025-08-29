@@ -1,0 +1,10 @@
+main{
+background-color: rgb(24,24,27);
+padding-top: 5em ;
+color: aliceblue;
+}
+
+img{
+    width: 50vh;
+    height: 0 auto;
+}

@@ -1,52 +1,62 @@
 
 html {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: clamp(12px, 1vw, 18px);
 }
 
 body{
   margin: 0; /* fix body margin, should only be on header somehow */
-  font-size: 1vw;
-  padding-top: 5em ;
+  font-size: 1rem;
 }
 
 header {
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     background-color: rgb(9,9,11);
-    padding-bottom: 3px;
+    padding-bottom: 0.3em 1em;
+    position: fixed;
 }
 
 .flex-container {
   display: flex;
   background-color: DodgerBlue;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   justify-content: space-between;
   align-items: center;
 }
 
 .flex-container > div {
-  background-color: DodgerBlue;
-  padding: 0.em;
+  padding: 0.2em 1em;
   text-align: center;
   
+}
+.name{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .page-titles{
   display: flex;
   font-size: 1.5vw;
+  gap: 0.5em;
+  font-size: clamp(0.9rem, 1.5vw, 1.5rem);
 }
 
 .page-titles a {
   color: #000000;
   text-decoration: none;
-  background-color: aquamarine;
-  border-radius: 0.5vw;
-  padding: 0.2em;
-  margin: 0.2em;
+  background-color: rgb(176, 180, 184);
+  border: 0.1em solid rgb(9,9,11);
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  flex: 1;
+  text-align: center;
 }
 
 .page-titles a:hover {
@@ -60,11 +70,13 @@ header {
 }
 
 .page-titles > div {
+  
   background-color: rgb(9,9,11);
   text-align: center;
   padding: 0.2em;
   margin: 0.2em;
   border-radius: 0.5vw;
+  
   
 }
 
@@ -75,9 +87,10 @@ footer {
   background-color: rgb(9,9,11);
   
   margin: 0px;
-  padding: 0.2em;
+  padding: 1em;
   text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-container{
@@ -96,44 +109,41 @@ footer {
 
 .contact-container a{
   color:whitesmoke;
-  
 }
 
 .text{
-background-color: rgb(24,24,27);
-float: left;
-text-align: left;
-font-size: 0.4em;
-padding: 2px;
-border-radius: 15px;
-border: 3px;
+  background-color: rgb(24,24,27);
+  text-align: left;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  padding: 0.2em;
+  border-radius: 1em;
 }
 
 .text > div{
-  margin: 0px;
-  padding: 4px;
-  border: 0px;
-  line-height:0.02em
-  
+  padding: 0.2em;
+  line-height: 0.2;
 }
 
 svg {
-  width: 2em;
-  height: 2em;
+  width: clamp(2rem, 5vw, 4rem);
+  height: clamp(2rem, 5vw, 4rem);
 }
 
 .logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
   align-items: center;
+  width: fit-content;
+  gap: 0.2em;
+  margin: auto;
   
 }
 
 .logos a {
   background-color: rgb(24,24,27);
-  margin: 3px;
-  padding: 0px;
-  border: 1px;
-  border-radius: 15px;
+  border-radius: 0.5em;
 
   display: flex;
   justify-content: center;

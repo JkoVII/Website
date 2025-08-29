@@ -6,6 +6,7 @@ html {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     font-size: clamp(12px, 1vw, 18px);
+    background-color: rgb(24,24,27)
 }
 
 body{
@@ -24,7 +25,7 @@ header {
 
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
+  background-color: rgb(9,9,11);
   font-size: clamp(1rem, 2vw, 2rem);
   justify-content: space-between;
   align-items: center;
@@ -39,6 +40,7 @@ header {
   font-family: "Fjalla One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: rgb(59, 130, 246);
 }
 
 .page-titles{
@@ -49,10 +51,10 @@ header {
 }
 
 .page-titles a {
-  color: #000000;
+  color: whitesmoke;
   text-decoration: none;
-  background-color: rgb(176, 180, 184);
-  border: 0.1em solid rgb(9,9,11);
+  background-color: rgb(24,24,27);
+  border: 0.1em solid rgb(176, 180, 184);
   border-radius: 0.5em;
   padding: 0.3em 0.6em;
   flex: 1;
@@ -60,12 +62,28 @@ header {
 }
 
 .page-titles a:hover {
-  color: rgb(0, 128, 255);
-  text-decoration:underline;
+  color: rgb(59, 130, 246);
+  background-color: rgb(39, 39, 37);
+  text-decoration:none;
+}
+
+.page-titles a::after{
+ content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    width: 0; 
+    background-color: rgb(59, 130, 246);
+    transition: width 0.5s ease; 
+}
+
+.page-titles a:hover::after {
+    width: 100%; 
 }
 
 .page-titles a:focus {
-  color: DodgerBlue;
+  color: rgb(59, 130, 246);
   text-decoration:underline;
 }
 
@@ -95,16 +113,14 @@ footer {
 
 .contact-container{
   display: flex;
-  font-size: 2vw;
   align-items: center;
   color: whitesmoke;
   margin: 40px;
-  border: 2px;
-  padding: 3px;
-  border-radius: 15px;
+  padding: 0.15em;
+  border-radius: 0.5em;
   background-color: rgb(176, 180, 184);
   gap: 7px;
-  
+  width: fit-content;
 }
 
 .contact-container a{
@@ -116,11 +132,10 @@ footer {
   text-align: left;
   font-size: clamp(0.6rem, 1vw, 1rem);
   padding: 0.2em;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .text > div{
-  padding: 0.2em;
   line-height: 0.2;
 }
 

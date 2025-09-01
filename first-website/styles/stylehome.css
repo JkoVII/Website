@@ -2,18 +2,14 @@ main{
 background-color: rgb(24,24,27);
 padding-top: 5em ;
 color: whitesmoke;
-font-size: clamp(12px, 1vw, 18px);
+font-size: 1.3rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 200px;
 }
 
 h1{
     line-height: 0.2em;
-}
-
-main{
-    font-size: 1.3rem;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 200px;
 }
 
 .about-me{

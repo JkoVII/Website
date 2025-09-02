@@ -1,0 +1,72 @@
+main{
+background-color: rgb(24,24,27);
+padding-top: 5em ;
+color: whitesmoke;
+font-size: clamp(12px, 1vw, 18px);
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+
+.opener{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    gap: 200px;
+    text-align: center;
+}
+
+
+.project-grid {
+    margin: 70px auto;
+    border: solid rgb(176, 180, 184) 1px;
+    width: fit-content;
+    background-color: rgb(24, 24, 27);
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.308) 1px 1px 0px, rgba(0, 0, 0, 0.16) 0px 8px 24px, rgba(0, 0, 0, 0.12) 0px 1px 6px;
+    border-radius: 12px;
+    padding: 1px 36px;
+    width: clamp(350px, 45vw, 600px);
+}
+
+.block-content{
+    display: grid;
+    margin: 70px auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.block-content >div{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(24, 24, 27);
+    border: 2px solid rgba(255, 255, 255, 0.308);
+    border-radius: 12px;
+    padding: 0px 10px;
+}
+
+.block-content >div h2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.block-content >div a{
+    background-color: rgb(59, 130, 246);
+    color: white;
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-weight: 500;
+    margin: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    float: right;
+    transition: background-color 0.3s ease;
+}
+
+.block-content >div a:hover {
+    background-color: rgb(37, 99, 235); /*make the grey border around the game ease into a color*/
+}

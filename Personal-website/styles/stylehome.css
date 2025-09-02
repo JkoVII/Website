@@ -1,0 +1,85 @@
+main{
+background-color: rgb(24,24,27);
+padding-top: 5em ;
+color: whitesmoke;
+font-size: 1.3rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+
+h1{
+    line-height: 0.2em;
+}
+
+.about-me{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    max-width: 500px;
+}
+
+img{
+    width: 359px;
+    height: auto;
+    border: solid rgb(9,9,1) 10px;
+    border-radius: 100px;
+}
+
+/* Resume download link block */
+.rdl {
+    margin: 70px auto;
+    border: solid rgb(176, 180, 184) 1px;
+    border-radius: 25px;
+    width: fit-content;
+    background-color: rgb(24, 24, 27);
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.308) 1px 1px 0px, rgba(0, 0, 0, 0.16) 0px 8px 24px, rgba(0, 0, 0, 0.12) 0px 1px 6px;
+    border-radius: 12px;
+    padding: 32px 36px;
+    width: clamp(350px, 45vw, 600px);
+}
+
+.rdl h2 {
+    font-size: clamp(20px, 2.5vw, 24px);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.rdl p {
+    color: rgb(255, 255, 255);
+    max-width: 500px;
+    font-size: clamp(16px, 1.2vw, 16px);
+    font-weight: 100;
+    margin-bottom: 24px;
+    line-height: 1.5em;
+}
+
+.rdl-button {
+    background-color: rgb(59, 130, 246);
+    color: white;
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.rdl-button:hover {
+    background-color: rgb(37, 99, 235);
+}
+
+.rdl > div {
+    margin: 0px;
+}

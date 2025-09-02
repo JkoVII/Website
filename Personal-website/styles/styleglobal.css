@@ -1,0 +1,166 @@
+
+html {
+  font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: clamp(12px, 1vw, 18px);
+    background-color: rgb(24,24,27)
+}
+
+body{
+  margin: 0; /* fix body margin, should only be on header somehow */
+  font-size: 1rem;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(9,9,11);
+    padding-bottom: 0.3em 1em;
+    position: fixed;
+}
+
+.flex-container {
+  display: flex;
+  background-color: rgb(9,9,11);
+  font-size: clamp(1rem, 2vw, 2rem);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container > div {
+  padding: 0.2em 1em;
+  text-align: center;
+  
+}
+.name{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(59, 130, 246);
+}
+
+.page-titles{
+  display: flex;
+  font-size: 1.5vw;
+  gap: 0.5em;
+  font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+}
+
+.page-titles a {
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: rgb(24,24,27);
+  border: 0.1em solid rgb(176, 180, 184);
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  flex: 1;
+  text-align: center;
+}
+
+.page-titles a:hover {
+  color: rgb(59, 130, 246);
+  background-color: rgb(39, 39, 37);
+  text-decoration:none;
+}
+
+.page-titles a::after{
+ content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    width: 0; 
+    background-color: rgb(59, 130, 246);
+    transition: width 0.5s ease; 
+}
+
+.page-titles a:hover::after {
+    width: 100%; 
+}
+
+.page-titles a:focus {
+  color: rgb(59, 130, 246);
+  text-decoration:underline;
+}
+
+.page-titles > div {
+  
+  background-color: rgb(9,9,11);
+  text-align: center;
+  padding: 0.2em;
+  margin: 0.2em;
+  border-radius: 0.5vw;
+  
+  
+}
+
+/* Footer css below */
+
+footer {
+  display: flex;
+  background-color: rgb(9,9,11);
+  
+  margin: 0px;
+  padding: 1em;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-container{
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  margin: 40px;
+  padding: 0.15em;
+  border-radius: 0.5em;
+  background-color: rgb(176, 180, 184);
+  gap: 7px;
+  width: fit-content;
+}
+
+.contact-container a{
+  color:whitesmoke;
+}
+
+.text{
+  background-color: rgb(24,24,27);
+  text-align: left;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  padding: 0.2em;
+  border-radius: 0.5em;
+}
+
+.text > div{
+  line-height: 0.2;
+}
+
+svg {
+  width: clamp(2rem, 5vw, 4rem);
+  height: clamp(2rem, 5vw, 4rem);
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  align-items: center;
+  width: fit-content;
+  gap: 0.2em;
+  margin: auto;
+  
+}
+
+.logos a {
+  background-color: rgb(24,24,27);
+  border-radius: 0.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
